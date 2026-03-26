@@ -1,123 +1,96 @@
-# Artist EPK (One Page)
+# ALYRIS Analytics
 
-Fast static EPK built with **HTML5 + Tailwind CDN + Vanilla JS**.
+Static analytics dashboard for ALYRIS built with **HTML + Tailwind CDN + vanilla JavaScript + Chart.js**.
 
-## 1) Connect your Google Sheet (Live Stats)
+This version replaces the original EPK layout with:
 
-### Publish to web → CSV
-1. In Google Sheets: **File → Share → Publish to web**
-2. Choose the sheet/tab that contains the stats
-3. Choose format: **Comma-separated values (.csv)**
-4. Copy the generated URL (it will look like `https://docs.google.com/spreadsheets/d/e/.../pub?output=csv`)
+- repository-backed daily JSON snapshots of the Google Sheet
+- timeframe selectors: **7 / 30 / 90 / year to date / all time / custom**
+- growth reporting for every tracked numeric metric in the format **+7 (+12%)**
+- green growth / red decline indicators
+- trend charts that update automatically for the selected timeframe
 
-### Paste the URL
-- Open `app.js`
-- Replace:
-  - `CONFIG.SHEET_CSV_URL = "PASTE_YOUR_PUBLISHED_CSV_URL_HERE"`
+## Data source
 
-### Required column mapping
-- Column A: Platform Name
-- Column B: Main Stat Label
-- Column C: Value/Number
-- Column F: Last Updated Timestamp
+The dashboard reads from the published Google Sheet already used in the original repository:
 
-The page looks for these platform names (case-insensitive) and common aliases:
-- TikTok
-- Instagram (IG)
-- YouTube (YT)
-- Facebook (FB)
-- TuneCore / Total Streams
+- `metrics.mjs` holds the shared sheet URL and metric definitions
+- `scripts/fetch_analytics_history.py` fetches the CSV and stores normalized JSON into `data/`
+- `app.js` reads the stored JSON so GitHub Pages can show historical reporting without needing a backend
 
-If your sheet uses different naming, update `CONFIG.PLATFORM_ALIASES`.
+## Tracked metrics
 
-## 2) Customize the EPK content
+- Total Streams
+- Total Followers
+- Instagram Followers
+- TikTok Followers
+- YouTube Subscribers
+- YouTube Views
+- Spotify Followers
+- Spotify Monthly Listeners
+- Facebook Followers
 
-- Hero image: replace `assets/hero.svg` with your press image (keep filename or update `index.html`).
-- Artist name & bio: edit `index.html` header + Bio section.
-- Spotify embed: replace the `<iframe src="...">` in the Spotify section.
-- YouTube embed: replace the `youtube-nocookie.com/embed/VIDEO_ID` URL.
-- Bandsintown: replace `data-artist-name="ARTIST_NAME"`.
+## Daily automation
 
-## 3) Run locally (recommended)
+GitHub Actions is configured in `.github/workflows/daily-sync.yml` to:
 
-From this folder:
+1. run every day
+2. fetch the latest sheet data
+3. update `data/history.json` and `data/latest.json`
+4. commit the change back to the repo automatically
+
+You can also trigger it manually with **Actions → Sync analytics history → Run workflow**.
+
+## Run locally
+
+From the repository root:
 
 ```bash
 python3 -m http.server 5173
 ```
 
-Then open:
+Open:
+
 - `http://localhost:5173`
 
-(You need a local server because browsers block `fetch()` from `file://` pages.)
+## Manual snapshot refresh
 
-## 4) Deploy to Vercel (fastest)
+To create or refresh the stored JSON locally:
 
-### Option A — Vercel dashboard
-1. Push this folder to a GitHub repo
-2. In Vercel: **New Project → Import Git Repository**
-3. Framework preset: **Other**
-4. Build command: **None**
-5. Output directory: **/** (root)
-6. Deploy
-
-### Add custom subdomain (epk.mydomain.com)
-1. In Vercel project: **Settings → Domains → Add** `epk.mydomain.com`
-2. Vercel will show the required DNS record. Usually one of:
-   - **CNAME**: `epk` → `cname.vercel-dns.com`
-   - or **A** record to a Vercel IP (less common for subdomains)
-3. Add that DNS record at your domain registrar/DNS provider
-4. Wait for DNS to propagate (minutes to a few hours)
-
-## 5) Deploy to GitHub Pages
-
-### Your setup (recommended)
-- GitHub username: `christhrelfallm89`
-- Custom domain: `epk.alyris.uk` (IONOS DNS)
-
-### Option A — Pages from root (simple)
-1. Push this folder to a GitHub repo
-2. Repo → **Settings → Pages**
-3. Build and deployment:
-   - Source: **Deploy from a branch**
-   - Branch: **main** (or master)
-   - Folder: **/** (root)
-4. Save
-
-After this, your temporary URL will be:
-- `https://christhrelfallm89.github.io/<repo-name>/`
-
-### Custom subdomain
-1. Repo → **Settings → Pages → Custom domain**: enter `epk.alyris.uk`
-2. GitHub may create a `CNAME` file automatically. If not, create a file named `CNAME` with:
-
-```txt
-epk.alyris.uk
+```bash
+python3 scripts/fetch_analytics_history.py
 ```
 
-3. In IONOS DNS for `alyris.uk`, add this record:
-   - Type: **CNAME**
-   - Host/Name: `epk`
-   - Target/Value: `christhrelfallm89.github.io`
-   - TTL: default (e.g. 1 hour) is fine
+## GitHub Pages deployment
 
-4. Back in GitHub Pages, wait for the “DNS check” to succeed, then enable:
-   - **Enforce HTTPS**
+1. Push this folder to the new GitHub repo: **ALYRIS-ANALYTICS**
+2. In GitHub → **Settings → Pages**
+3. Choose **Deploy from a branch**
+4. Select **main** and the root folder `/`
 
-Notes:
-- If you want HTTPS, enable **Enforce HTTPS** in GitHub Pages once DNS is set.
-- For apex domains (mydomain.com), GitHub requires A/AAAA records, but for subdomains CNAME is best.
+The default Pages URL will be:
 
-IONOS tip:
-- DNS propagation can take a few minutes up to a couple of hours; if GitHub says the domain is “Not verified” right away, wait and try again.
+- `https://christhrelfallm89.github.io/ALYRIS-ANALYTICS/`
 
-## Troubleshooting
+If you want a custom domain for analytics, add a new `CNAME` later once you know the final hostname. The old EPK domain file has been removed on purpose so this repo does not inherit the source site's domain.
 
-- If stats won’t load:
-  - Confirm the sheet is published to web as **CSV**
-  - Try opening the CSV URL in a browser; it should download/show CSV text
-  - Ensure there are values in columns A/B/C and a timestamp in column F
+## Creating the GitHub repo
 
-- If you see CORS errors:
-  - Re-publish the sheet, or ensure you used the `pub?output=csv` link
+This local copy is ready to publish as `ALYRIS-ANALYTICS`. If you have not created the remote repo yet:
+
+1. create a new empty GitHub repository named `ALYRIS-ANALYTICS`
+2. point `origin` at the new repo
+3. push the current branch
+
+Example:
+
+```bash
+git remote set-url origin https://github.com/christhrelfallm89/ALYRIS-ANALYTICS.git
+git push -u origin main
+```
+
+## Notes
+
+- The original `alyris-epk` repository is not modified by this work.
+- With only one stored snapshot, growth values will show as flat until additional daily snapshots accumulate.
 

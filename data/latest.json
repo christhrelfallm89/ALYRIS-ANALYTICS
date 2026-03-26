@@ -1,0 +1,21 @@
+{
+  "date": "2026-03-26",
+  "capturedAt": "2026-03-26T00:00:00.000Z",
+  "lastUpdated": "2026-03-25T18:00:56.897Z",
+  "topCities": [
+    "Bristol",
+    "London",
+    "Nottingham"
+  ],
+  "metrics": {
+    "totalStreams": 26800,
+    "totalFollowers": 2246,
+    "instagramFollowers": 520,
+    "tiktokFollowers": 621,
+    "youtubeSubscribers": 383,
+    "youtubeViews": 30300,
+    "spotifyFollowers": 254,
+    "spotifyMonthlyListeners": 82,
+    "facebookFollowers": 468
+  }
+}
