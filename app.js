@@ -195,6 +195,16 @@ function getTrendClasses(trend) {
   };
 }
 
+function arrowSvg(trend) {
+  if (trend === "up") {
+    return `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" aria-hidden="true"><path d="M12 4l8 9H4l8-9Z" fill="currentColor"/></svg>`;
+  }
+  if (trend === "down") {
+    return `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" aria-hidden="true"><path d="M12 20l8-9H4l8 9Z" fill="currentColor"/></svg>`;
+  }
+  return `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="inline-block shrink-0" aria-hidden="true"><path d="M4 12h16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>`;
+}
+
 function renderSummaryPills(filteredRange, allSnapshots) {
   const latest = state.latest;
   const coverageStart = allSnapshots[0]?.date ? formatShortDate(allSnapshots[0].date) : "—";
@@ -251,8 +261,9 @@ function renderMetricCards(filteredRange) {
       <div class="mt-7 flex items-end justify-between gap-4">
         <div>
           <div class="text-4xl font-semibold tracking-tight text-white">${formatNumber(summary.current)}</div>
-          <div class="mt-2 text-sm ${summary.trend === "up" ? "text-emerald-200" : summary.trend === "down" ? "text-rose-200" : "text-white/65"}">
-            ${formatDelta(summary.delta, summary.percent)}
+          <div class="mt-2 flex items-center gap-1 text-sm font-medium ${summary.trend === "up" ? "text-emerald-300" : summary.trend === "down" ? "text-rose-300" : "text-white/50"}">
+            ${arrowSvg(summary.trend)}
+            <span>${formatDelta(summary.delta, summary.percent)}</span>
           </div>
         </div>
         <div class="text-right text-xs text-white/45">
@@ -292,7 +303,7 @@ function renderCharts(filteredRange) {
         </div>
         <div class="text-right">
           <div class="text-sm text-white/80">${formatNumber(summary.current)}</div>
-          <div class="mt-1 text-xs ${summary.trend === "up" ? "text-emerald-200" : summary.trend === "down" ? "text-rose-200" : "text-white/50"}">${formatDelta(summary.delta, summary.percent)}</div>
+          <div class="mt-1 flex items-center justify-end gap-1 text-xs font-medium ${summary.trend === "up" ? "text-emerald-300" : summary.trend === "down" ? "text-rose-300" : "text-white/50"}">${arrowSvg(summary.trend)}<span>${formatDelta(summary.delta, summary.percent)}</span></div>
         </div>
       </div>
       <div class="chart-wrap mt-4">
