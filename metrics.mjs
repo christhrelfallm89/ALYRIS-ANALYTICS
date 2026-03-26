@@ -18,6 +18,7 @@ export const METRIC_DEFINITIONS = [
     category: "Totals",
     href: PLATFORM_LINKS.website,
     color: "#f59e0b",
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 4a1 1 0 0 0-1 1v4a1 1 0 1 0 2 0V7a1 1 0 0 0-1-1zm3 6a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0v-3a1 1 0 0 0-1-1zm-6 0a1 1 0 0 0-1 1v3a1 1 0 1 0 2 0v-3a1 1 0 0 0-1-1z" fill="currentColor"/></svg>',
   },
   {
     key: "totalFollowers",
@@ -26,6 +27,7 @@ export const METRIC_DEFINITIONS = [
     category: "Totals",
     href: PLATFORM_LINKS.website,
     color: "#14b8a6",
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2zm0 3a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-4 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-4 5c-2.5 0-4.7.6-6 1.5a6 6 0 0 0 12 0c-1.3-.9-3.5-1.5-6-1.5z" fill="currentColor"/></svg>',
   },
   {
     key: "instagramFollowers",
@@ -34,6 +36,7 @@ export const METRIC_DEFINITIONS = [
     category: "Social",
     href: PLATFORM_LINKS.instagram,
     color: "#ec4899",
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4.5A5.5 5.5 0 1 1 6.5 12 5.5 5.5 0 0 1 12 8.5zm0 2A3.5 3.5 0 1 0 15.5 12 3.5 3.5 0 0 0 12 10.5ZM18 6.2a1 1 0 1 1-1 1 1 1 0 0 1 1-1z" fill="currentColor"/></svg>',
   },
   {
     key: "tiktokFollowers",
@@ -42,6 +45,7 @@ export const METRIC_DEFINITIONS = [
     category: "Social",
     href: PLATFORM_LINKS.tiktok,
     color: "#22d3ee",
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 3v10.2a4.8 4.8 0 1 1-4-4.72V6.2a8.6 8.6 0 1 0 8.6 8.6V8.3c1.1.8 2.4 1.3 3.9 1.4V5.8c-2.4-.2-4.6-1.5-5.7-2.8z" fill="currentColor"/></svg>',
   },
   {
     key: "youtubeSubscribers",
@@ -50,6 +54,7 @@ export const METRIC_DEFINITIONS = [
     category: "Social",
     href: PLATFORM_LINKS.youtube,
     color: "#ef4444",
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.7 4.6 12 4.6 12 4.6s-5.7 0-7.5.5A3 3 0 0 0 2.4 7.2 31.4 31.4 0 0 0 2 12a31.4 31.4 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.8.5 7.5.5 7.5.5s5.7 0 7.5-.5a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 22 12a31.4 31.4 0 0 0-.4-4.8ZM10 15.5v-7l6 3.5-6 3.5z" fill="currentColor"/></svg>',
   },
   {
     key: "youtubeViews",
@@ -58,6 +63,7 @@ export const METRIC_DEFINITIONS = [
     category: "Social",
     href: PLATFORM_LINKS.youtube,
     color: "#f97316",
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4c-4.4 0-8.5 2.2-10.9 5.6C.5 10.8 0 11.4 0 12s.5 1.2 1.1 2.4C3.5 17.8 7.6 20 12 20s8.5-2.2 10.9-5.6c.6-1.2 1.1-1.8 1.1-2.4s-.5-1.2-1.1-2.4C20.5 6.2 16.4 4 12 4zm0 11c-1.6 0-3-1.3-3-3s1.3-3 3-3 3 1.3 3 3-1.3 3-3 3z" fill="currentColor"/></svg>',
   },
   {
     key: "spotifyFollowers",
@@ -66,6 +72,7 @@ export const METRIC_DEFINITIONS = [
     category: "Streaming",
     href: PLATFORM_LINKS.spotify,
     color: "#22c55e",
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm4.6 14.5a.9.9 0 0 1-1.24.3c-2.4-1.5-5.4-1.9-8.9-1.1a.9.9 0 0 1-.4-1.75c3.9-.9 7.3-.5 10 1.2.42.26.55.82.3 1.35zm.9-2.5a1.05 1.05 0 0 1-1.45.35c-2.75-1.7-6.95-2.2-10.2-1.2a1.05 1.05 0 1 1-.6-2c3.75-1.1 8.4-.55 11.6 1.4.5.3.66.96.35 1.45zm.1-2.7c-3.3-2-8.75-2.2-11.9-1.25a1.2 1.2 0 0 1-.7-2.3c3.6-1.1 9.65-.9 13.5 1.5a1.2 1.2 0 1 1-1.3 2.05z" fill="currentColor"/></svg>',
   },
   {
     key: "spotifyMonthlyListeners",
@@ -74,6 +81,7 @@ export const METRIC_DEFINITIONS = [
     category: "Streaming",
     href: PLATFORM_LINKS.spotify,
     color: "#84cc16",
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm4.6 14.5a.9.9 0 0 1-1.24.3c-2.4-1.5-5.4-1.9-8.9-1.1a.9.9 0 0 1-.4-1.75c3.9-.9 7.3-.5 10 1.2.42.26.55.82.3 1.35zm.9-2.5a1.05 1.05 0 0 1-1.45.35c-2.75-1.7-6.95-2.2-10.2-1.2a1.05 1.05 0 1 1-.6-2c3.75-1.1 8.4-.55 11.6 1.4.5.3.66.96.35 1.45zm.1-2.7c-3.3-2-8.75-2.2-11.9-1.25a1.2 1.2 0 0 1-.7-2.3c3.6-1.1 9.65-.9 13.5 1.5a1.2 1.2 0 1 1-1.3 2.05z" fill="currentColor"/></svg>',
   },
   {
     key: "facebookFollowers",
@@ -82,5 +90,6 @@ export const METRIC_DEFINITIONS = [
     category: "Social",
     href: PLATFORM_LINKS.facebook,
     color: "#3b82f6",
+    icon: '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 21v-7h2.6l.4-3H13.5V9.2c0-.9.2-1.5 1.6-1.5H16.6V5.1a20 20 0 0 0-2.3-.1c-2.3 0-3.8 1.4-3.8 4v2H8v3h2.5v7h3z" fill="currentColor"/></svg>',
   },
 ];

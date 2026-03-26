@@ -248,10 +248,15 @@ function renderMetricCards(filteredRange) {
     card.className = `group rounded-3xl border ${trendClasses.border} bg-white/5 p-5 shadow-glow transition hover:bg-white/[0.065]`;
     card.innerHTML = `
       <div class="flex items-start justify-between gap-4">
-        <div>
-          <div class="text-[11px] uppercase tracking-[0.24em] text-white/45">${metric.category}</div>
-          <h3 class="mt-2 text-lg font-semibold tracking-tight text-white">${metric.title}</h3>
-          <div class="mt-1 text-sm text-white/55">${metric.label}</div>
+        <div class="flex items-start gap-3">
+          <div class="mt-1 h-12 w-12 rounded-full flex items-center justify-center shrink-0 ${summary.trend === "up" ? "text-emerald-400" : summary.trend === "down" ? "text-rose-400" : "text-white/40"}">
+            ${metric.icon}
+          </div>
+          <div>
+            <div class="text-[11px] uppercase tracking-[0.24em] text-white/45">${metric.category}</div>
+            <h3 class="mt-2 text-lg font-semibold tracking-tight text-white">${metric.title}</h3>
+            <div class="mt-1 text-sm text-white/55">${metric.label}</div>
+          </div>
         </div>
         <span class="rounded-full px-3 py-1 text-xs font-medium ${trendClasses.badge}">
           ${summary.trend === "up" ? "Growing" : summary.trend === "down" ? "Shrinking" : "Flat"}
