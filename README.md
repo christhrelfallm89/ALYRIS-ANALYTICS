@@ -38,8 +38,19 @@ GitHub Actions is configured in `.github/workflows/daily-sync.yml` to:
 2. fetch the latest sheet data
 3. update `data/history.json` and `data/latest.json`
 4. commit the change back to the repo automatically
+5. post a daily growth report to Discord (if webhook secret is configured)
 
 You can also trigger it manually with **Actions → Sync analytics history → Run workflow**.
+
+### Discord daily report setup
+
+1. In Discord, edit your channel → **Integrations** → **Webhooks** → **New Webhook**
+2. Copy the webhook URL
+3. In GitHub repo settings: **Settings → Secrets and variables → Actions**
+4. Create a new repository secret named `DISCORD_WEBHOOK_URL`
+5. Paste the webhook URL as the value
+
+Once set, the daily workflow posts a growth summary using `scripts/post_discord_report.py`.
 
 ## Run locally
 
