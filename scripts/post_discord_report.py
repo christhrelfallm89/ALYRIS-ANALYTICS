@@ -4,7 +4,8 @@ import json
 import os
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.request import Request, urlopen
+from http.client import HTTPSConnection
+from urllib.parse import urlparse
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 HISTORY_PATH = REPO_ROOT / "data" / "history.json"
@@ -94,18 +95,29 @@ def build_report_lines(history: dict) -> list[str]:
 
 
 def send_to_discord(webhook_url: str, content: str) -> None:
-    payload = {"content": content[:1900]}
-    body = json.dumps(payload).encode("utf-8")
-    request = Request(
-        webhook_url,
-        data=body,
-        headers={"Content-Type": "application/json"},
-        method="POST",
-    )
-    with urlopen(request) as response:
-        status = getattr(response, "status", None)
-        if status and status >= 400:
+    parsed = urlparse(webhook_url)
+    host = parsed.netloc
+    path = parsed.path
+    if parsed.query:
+        path += f"?{parsed.query}"
+
+    payload = json.dumps({"content": content[:1900]}).encode("utf-8")
+    
+    conn = HTTPSConnection(host)
+    try:
+        conn.request(
+            "POST",
+            path,
+            body=payload,
+            headers={"Content-Type": "application/json"},
+        )
+        response = conn.getresponse()
+        status = response.status
+        if status < 200 or status >= 300:
             raise RuntimeError(f"Discord webhook failed with status {status}")
+        response.read()
+    finally:
+        conn.close()
 
 
 def main() -> None:
