@@ -91,6 +91,9 @@ def build_report_lines(history: dict) -> list[str]:
     if last_updated:
         lines.append(f"🕒 Sheet Last Updated: {last_updated}")
 
+    lines.append("")
+    lines.append("📊 View full metrics: https://analytics.alyris.uk")
+
     return lines
 
 
