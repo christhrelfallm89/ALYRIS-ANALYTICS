@@ -1,7 +1,7 @@
 {
   "sheetCsvUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSd-eBeAuYkde8q-AKXvkqR2r0ogPmtJMJ4pzHSBsr2AcqUcBQsQwrpmZ1ecBUxBmzZiMTwn77NoZ-s/pub?output=csv",
-  "updatedAt": "2026-04-25T06:45:38.175838Z",
-  "snapshotCount": 31,
+  "updatedAt": "2026-04-26T06:53:38.945100Z",
+  "snapshotCount": 32,
   "snapshots": [
     {
       "date": "2026-03-26",
@@ -652,6 +652,27 @@
         "spotifyFollowers": 271,
         "spotifyMonthlyListeners": 114,
         "facebookFollowers": 473
+      }
+    },
+    {
+      "date": "2026-04-26",
+      "capturedAt": "2026-04-26T06:53:38.945100Z",
+      "lastUpdated": "2026-04-25T17:00:28.615Z",
+      "topCities": [
+        "London",
+        "Bristol",
+        "Melksham"
+      ],
+      "metrics": {
+        "totalStreams": 27146,
+        "totalFollowers": 2690,
+        "instagramFollowers": 544,
+        "tiktokFollowers": 989,
+        "youtubeSubscribers": 412,
+        "youtubeViews": 61119,
+        "spotifyFollowers": 271,
+        "spotifyMonthlyListeners": 108,
+        "facebookFollowers": 474
       }
     }
   ]
