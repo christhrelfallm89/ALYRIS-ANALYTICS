@@ -1,7 +1,7 @@
 {
   "sheetCsvUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSd-eBeAuYkde8q-AKXvkqR2r0ogPmtJMJ4pzHSBsr2AcqUcBQsQwrpmZ1ecBUxBmzZiMTwn77NoZ-s/pub?output=csv",
-  "updatedAt": "2026-05-08T06:51:36.154134Z",
-  "snapshotCount": 44,
+  "updatedAt": "2026-05-09T06:57:46.563661Z",
+  "snapshotCount": 45,
   "snapshots": [
     {
       "date": "2026-03-26",
@@ -919,6 +919,26 @@
         "spotifyFollowers": 275,
         "spotifyMonthlyListeners": 118,
         "facebookFollowers": 478
+      }
+    },
+    {
+      "date": "2026-05-09",
+      "capturedAt": "2026-05-09T06:57:46.563661Z",
+      "lastUpdated": "2026-05-08T17:00:50.311Z",
+      "topCities": [
+        "London",
+        "Taunton"
+      ],
+      "metrics": {
+        "totalStreams": 27146,
+        "totalFollowers": 3003,
+        "instagramFollowers": 556,
+        "tiktokFollowers": 1276,
+        "youtubeSubscribers": 416,
+        "youtubeViews": 67832,
+        "spotifyFollowers": 276,
+        "spotifyMonthlyListeners": 118,
+        "facebookFollowers": 479
       }
     }
   ]
