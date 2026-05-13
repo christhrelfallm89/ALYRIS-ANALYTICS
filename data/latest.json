@@ -1,20 +1,20 @@
 {
-  "date": "2026-05-12",
-  "capturedAt": "2026-05-12T07:15:42.044239Z",
-  "lastUpdated": "2026-05-11T17:00:54.147Z",
+  "date": "2026-05-13",
+  "capturedAt": "2026-05-13T07:21:26.477540Z",
+  "lastUpdated": "2026-05-12T17:01:21.966Z",
   "topCities": [
     "London",
     "Taunton"
   ],
   "metrics": {
     "totalStreams": 27146,
-    "totalFollowers": 3023,
-    "instagramFollowers": 566,
-    "tiktokFollowers": 1283,
-    "youtubeSubscribers": 416,
+    "totalFollowers": 3030,
+    "instagramFollowers": 569,
+    "tiktokFollowers": 1286,
+    "youtubeSubscribers": 415,
     "youtubeViews": 67832,
-    "spotifyFollowers": 276,
+    "spotifyFollowers": 277,
     "spotifyMonthlyListeners": 113,
-    "facebookFollowers": 482
+    "facebookFollowers": 483
   }
 }
