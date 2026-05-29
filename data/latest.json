@@ -1,11 +1,11 @@
 {
-  "date": "2026-05-28",
-  "capturedAt": "2026-05-28T07:40:00.896530Z",
-  "lastUpdated": "2026-05-27T17:00:43.018Z",
+  "date": "2026-05-29",
+  "capturedAt": "2026-05-29T07:38:26.275035Z",
+  "lastUpdated": "2026-05-28T17:00:48.124Z",
   "topCities": [
     "London",
     "Bristol",
-    "Birmingham"
+    "Glasgow"
   ],
   "metrics": {
     "totalStreams": 27146,
@@ -15,7 +15,7 @@
     "youtubeSubscribers": 438,
     "youtubeViews": 84304,
     "spotifyFollowers": 281,
-    "spotifyMonthlyListeners": 104,
+    "spotifyMonthlyListeners": 100,
     "facebookFollowers": 487
   }
 }
