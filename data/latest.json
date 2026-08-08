@@ -1,7 +1,7 @@
 {
-  "date": "2026-08-07",
-  "capturedAt": "2026-08-07T06:38:23.567949Z",
-  "lastUpdated": "2026-08-06T17:01:18.958Z",
+  "date": "2026-08-08",
+  "capturedAt": "2026-08-08T06:25:39.547604Z",
+  "lastUpdated": "2026-08-07T17:01:14.419Z",
   "topCities": [
     "Bristol",
     "London",
@@ -9,13 +9,13 @@
   ],
   "metrics": {
     "totalStreams": 28037,
-    "totalFollowers": 3446,
+    "totalFollowers": 3448,
     "instagramFollowers": 631,
     "tiktokFollowers": 1502,
     "youtubeSubscribers": 492,
     "youtubeViews": 137804,
-    "spotifyFollowers": 323,
-    "spotifyMonthlyListeners": 189,
+    "spotifyFollowers": 325,
+    "spotifyMonthlyListeners": 186,
     "facebookFollowers": 498
   }
 }
