@@ -1,7 +1,7 @@
 {
   "sheetCsvUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSd-eBeAuYkde8q-AKXvkqR2r0ogPmtJMJ4pzHSBsr2AcqUcBQsQwrpmZ1ecBUxBmzZiMTwn77NoZ-s/pub?output=csv",
-  "updatedAt": "2026-08-13T06:43:46.601144Z",
-  "snapshotCount": 141,
+  "updatedAt": "2026-08-14T06:42:54.176490Z",
+  "snapshotCount": 142,
   "snapshots": [
     {
       "date": "2026-03-26",
@@ -2948,6 +2948,27 @@
         "youtubeViews": 137804,
         "spotifyFollowers": 329,
         "spotifyMonthlyListeners": 165,
+        "facebookFollowers": 499
+      }
+    },
+    {
+      "date": "2026-08-14",
+      "capturedAt": "2026-08-14T06:42:54.176490Z",
+      "lastUpdated": "2026-08-13T17:01:06.454Z",
+      "topCities": [
+        "Manchester",
+        "Derby",
+        "Sydney"
+      ],
+      "metrics": {
+        "totalStreams": 28037,
+        "totalFollowers": 3456,
+        "instagramFollowers": 635,
+        "tiktokFollowers": 1501,
+        "youtubeSubscribers": 492,
+        "youtubeViews": 137804,
+        "spotifyFollowers": 329,
+        "spotifyMonthlyListeners": 160,
         "facebookFollowers": 499
       }
     }
