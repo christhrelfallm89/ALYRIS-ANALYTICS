@@ -1,7 +1,7 @@
 {
   "sheetCsvUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSd-eBeAuYkde8q-AKXvkqR2r0ogPmtJMJ4pzHSBsr2AcqUcBQsQwrpmZ1ecBUxBmzZiMTwn77NoZ-s/pub?output=csv",
-  "updatedAt": "2026-09-02T06:42:12.679777Z",
-  "snapshotCount": 161,
+  "updatedAt": "2026-09-03T06:38:27.854766Z",
+  "snapshotCount": 162,
   "snapshots": [
     {
       "date": "2026-03-26",
@@ -3367,6 +3367,27 @@
         "youtubeSubscribers": 491,
         "youtubeViews": 137804,
         "spotifyFollowers": 334,
+        "spotifyMonthlyListeners": 125,
+        "facebookFollowers": 506
+      }
+    },
+    {
+      "date": "2026-09-03",
+      "capturedAt": "2026-09-03T06:38:27.854766Z",
+      "lastUpdated": "2026-09-02T17:01:57.904Z",
+      "topCities": [
+        "London",
+        "Manchester",
+        "Bristol"
+      ],
+      "metrics": {
+        "totalStreams": 28037,
+        "totalFollowers": 3482,
+        "instagramFollowers": 648,
+        "tiktokFollowers": 1504,
+        "youtubeSubscribers": 491,
+        "youtubeViews": 137804,
+        "spotifyFollowers": 333,
         "spotifyMonthlyListeners": 125,
         "facebookFollowers": 506
       }
