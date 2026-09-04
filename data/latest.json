@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-03",
-  "capturedAt": "2026-09-03T06:38:27.854766Z",
-  "lastUpdated": "2026-09-02T17:01:57.904Z",
+  "date": "2026-09-04",
+  "capturedAt": "2026-09-04T06:36:56.850144Z",
+  "lastUpdated": "2026-09-03T17:01:01.431Z",
   "topCities": [
     "London",
     "Manchester",
@@ -15,7 +15,7 @@
     "youtubeSubscribers": 491,
     "youtubeViews": 137804,
     "spotifyFollowers": 333,
-    "spotifyMonthlyListeners": 125,
+    "spotifyMonthlyListeners": 121,
     "facebookFollowers": 506
   }
 }
