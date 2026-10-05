@@ -1,21 +1,21 @@
 {
-  "date": "2026-10-04",
-  "capturedAt": "2026-10-04T08:17:28.931343Z",
-  "lastUpdated": "2026-10-03T17:00:47.852Z",
+  "date": "2026-10-05",
+  "capturedAt": "2026-10-05T06:57:50.923216Z",
+  "lastUpdated": "2026-10-04T17:00:56.081Z",
   "topCities": [
     "London",
     "Bristol",
-    "Luton"
+    "Weston-super-Mare"
   ],
   "metrics": {
     "totalStreams": 28037,
     "totalFollowers": 3569,
-    "instagramFollowers": 676,
+    "instagramFollowers": 675,
     "tiktokFollowers": 1537,
     "youtubeSubscribers": 492,
     "youtubeViews": 137911,
     "spotifyFollowers": 340,
-    "spotifyMonthlyListeners": 113,
-    "facebookFollowers": 524
+    "spotifyMonthlyListeners": 110,
+    "facebookFollowers": 525
   }
 }
