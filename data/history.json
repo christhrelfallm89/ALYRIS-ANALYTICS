@@ -1,7 +1,7 @@
 {
   "sheetCsvUrl": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSd-eBeAuYkde8q-AKXvkqR2r0ogPmtJMJ4pzHSBsr2AcqUcBQsQwrpmZ1ecBUxBmzZiMTwn77NoZ-s/pub?output=csv",
-  "updatedAt": "2026-10-13T06:45:21.393046Z",
-  "snapshotCount": 202,
+  "updatedAt": "2026-10-14T06:38:01.152640Z",
+  "snapshotCount": 203,
   "snapshots": [
     {
       "date": "2026-03-26",
@@ -4224,6 +4224,27 @@
         "totalStreams": 29300,
         "totalFollowers": 3603,
         "instagramFollowers": 680,
+        "tiktokFollowers": 1547,
+        "youtubeSubscribers": 501,
+        "youtubeViews": 143227,
+        "spotifyFollowers": 342,
+        "spotifyMonthlyListeners": 118,
+        "facebookFollowers": 533
+      }
+    },
+    {
+      "date": "2026-10-14",
+      "capturedAt": "2026-10-14T06:38:01.152640Z",
+      "lastUpdated": "2026-10-13T17:01:28.423Z",
+      "topCities": [
+        "London",
+        "Bristol",
+        "Weston-super-Mare"
+      ],
+      "metrics": {
+        "totalStreams": 29300,
+        "totalFollowers": 3604,
+        "instagramFollowers": 681,
         "tiktokFollowers": 1547,
         "youtubeSubscribers": 501,
         "youtubeViews": 143227,
