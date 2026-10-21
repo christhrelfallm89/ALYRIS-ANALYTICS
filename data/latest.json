@@ -1,21 +1,21 @@
 {
-  "date": "2026-10-20",
-  "capturedAt": "2026-10-20T06:37:15.927178Z",
-  "lastUpdated": "2026-10-19T17:01:16.129Z",
+  "date": "2026-10-21",
+  "capturedAt": "2026-10-21T06:38:12.700051Z",
+  "lastUpdated": "2026-10-20T17:01:16.780Z",
   "topCities": [
     "London",
     "Bristol",
-    "Weston-super-Mare"
+    "Leicester"
   ],
   "metrics": {
     "totalStreams": 29300,
-    "totalFollowers": 3614,
-    "instagramFollowers": 687,
-    "tiktokFollowers": 1551,
+    "totalFollowers": 3615,
+    "instagramFollowers": 686,
+    "tiktokFollowers": 1553,
     "youtubeSubscribers": 500,
     "youtubeViews": 143227,
     "spotifyFollowers": 343,
-    "spotifyMonthlyListeners": 119,
+    "spotifyMonthlyListeners": 117,
     "facebookFollowers": 533
   }
 }
