@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-04",
-  "capturedAt": "2026-11-04T06:25:10.129732Z",
-  "lastUpdated": "2026-11-03T18:00:43.248Z",
+  "date": "2026-11-05",
+  "capturedAt": "2026-11-05T06:24:52.545164Z",
+  "lastUpdated": "2026-11-04T18:00:39.017Z",
   "topCities": [
     "Bristol",
     "London",
@@ -13,9 +13,9 @@
     "instagramFollowers": 711,
     "tiktokFollowers": 1560,
     "youtubeSubscribers": 506,
-    "youtubeViews": 151203,
+    "youtubeViews": 151506,
     "spotifyFollowers": 345,
-    "spotifyMonthlyListeners": 127,
+    "spotifyMonthlyListeners": 124,
     "facebookFollowers": 539
   }
 }
